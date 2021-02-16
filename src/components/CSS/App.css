@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.dropnav {
+  border: 1px solid rgb(247, 24, 24) !important;
+  outline: none !important;
+  background: transparent !important;
+  border-radius: none !important;
+}
+.gradcolor {
+  background: linear-gradient(to top right, #3bccff 11%, #ff99cc 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.classNumber {
+  border: none !important;
+  outline: none !important;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.countryInput {
+  background: transparent !important;
+  width: 100% !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  border: 1px solid rgba(27, 27, 27, 0.9) !important;
+}
+
+.loader {
+  width: 100% !important;
+  height: 100vh !important;
+  opacity: 0.9 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.userTextColor {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.numberinfo {
+  background: transparent !important;
+  width: 100% !important;
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.input-number {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  width: 100% !important;
+  padding-bottom: 1.2rem !important;
+  padding-top: 1.2rem !important;
+  display: inline-block !important;
+  height: 20% !important;
+}
+
+.link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.inputStyles {
+  border: 1px solid #fff !important;
+}
+
+.plans:hover {
+  transform: scale(1.03);
+  transition: all 0.5s linear;
+  z-index: 10;
+}
+.backtop {
+  position: fixed;
+  right: 0.7rem;
+  left: 0;
+  bottom: 2rem;
+  z-index: 20;
+}
+.subBtn {
+  outline: none !important;
+  border: none !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.subInput {
+  border-right: hidden !important;
+  border-left: hidden !important;
+  background-color: black !important;
+  border-top: hidden !important;
+  outline: none;
+  font-size: 1.2rem;
+}
+.about {
+  background: url('../../assets/bgcoin3.png') center / cover no-repeat;
+  height: 60vh;
+}
+.services {
+  background: url('../../assets/bgcoin.png') center / cover no-repeat;
+  height: 60vh;
+}
+
+.account {
+  background: url('../../assets/bgcoin1.JPG') center / cover no-repeat;
+}
+.hero {
+  background: url('../../assets/coin2.jpg') center / cover no-repeat;
+  height: 90vh;
+}
+
+.backtext {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-family: fantasy;
+  font-weight: bold;
+  text-shadow: 0 0 1px 1px;
+}
+
+.componentready {
+  animation: round infinite 0.5s linear;
+  background-color: 'black';
+}
+
+.formstyle {
+  border: 1px solid #33ccff !important;
+  border-radius: 1.2rem !important;
+  background-color: black !important;
+}
+.c {
+  color: #ff8f33;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mynav {
+    position: absolute;
+    right: 7%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .link {
+    margin-top: 1.2rem !important;
+  }
+}
