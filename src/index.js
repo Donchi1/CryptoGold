@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import { Provider } from 'react-redux'
+
+import firebase from './database/firebasedb'
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase'
+import { createFirestoreInstance } from 'redux-firestore'
+import BeforeComponents from './components/Auths/BeforeComponents'
+
+//import 'bootstrap/dist/css/bootstrap.min.css'
+import './components/CSS/App.css'
+
+import App from './App'
+import createAdminStore, { store } from './database/createAdminStore'
+import { dataProvider, history } from '../src/components/navigation/AdminPage'
+import authProvider from './components/navigation/authProvider'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  <Provider store={createAdminStore(authProvider, dataProvider, history)}>
+    <ReactReduxFirebaseProvider
+      firebase={firebase}
+      createFirestoreInstance={createFirestoreInstance}
+      dispatch={store.dispatch}
+      config={{
+        useFirestoreForProfile: 'true',
+        userProfile: 'users',
+        attachAuthIsReady: 'true',
+      }}
+    >
+      <BeforeComponents>
+        <App />
+      </BeforeComponents>
+    </ReactReduxFirebaseProvider>
+  </Provider>,
+  document.getElementById('root'),
+)
