@@ -230,11 +230,11 @@ function Footer() {
                     <Link to="#">Terms & Conditions</Link>
                   </li>
                 </ul>
+                <div className="elfsight-app-84586d1b-bf6b-445a-ac23-291e2f64e74b"></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="elfsight-app-84586d1b-bf6b-445a-ac23-291e2f64e74b"></div>
       </footer>
       {/* END FOOTER SECTION */}
       <a href="#" className="scrollup btn-default ">

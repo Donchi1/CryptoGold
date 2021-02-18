@@ -32,7 +32,7 @@ function UserNav() {
   }
   return (
     <>
-      <header className="header_wrap fixed-top">
+      <header className="header_wrap fixed-top ul-color">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg">
             <a
