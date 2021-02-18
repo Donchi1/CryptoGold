@@ -194,7 +194,7 @@ function Profile() {
                         size="sm"
                         className="form-control"
                         placeholder="Enter Email "
-                        defaultValue={userProfile.lastname}
+                        defaultValue={userProfile.email}
                         onChange={(e) =>
                           setuserData({ ...userData, email: e.target.value })
                         }
