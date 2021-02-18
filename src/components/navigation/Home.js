@@ -43,7 +43,7 @@ function Home() {
     contactAction(userData, firebase, dispatch, setuserData, setopenSnack)
   }
   return (
-    <div className="v_royal_blue" data-spy="scroll" data-offset="110">
+    <div className="v_royal_blue " data-spy="scroll" data-offset="110">
       {/* START HEADER */}
       <NavBar />
       {/* END HEADER */}
@@ -870,7 +870,7 @@ function Home() {
             <div className="col-lg-8 col-md-12 offset-lg-2">
               <div className="title_default_dark title_border text-center">
                 <h4
-                  className="animation animated"
+                  className="animation animated text-light"
                   data-animation="fadeInUp"
                   data-animation-delay="0.2s"
                 >

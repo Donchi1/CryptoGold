@@ -81,6 +81,13 @@ function Payments() {
     if (userProve === '') {
       return
     }
+    setOpenPay({
+      ...openPay,
+      etheruim: false,
+      btc: false,
+      bank: false,
+      litecoin: false,
+    })
     setOpenLoader(true)
 
     paymentAction(
@@ -143,7 +150,7 @@ function Payments() {
                 message={transSuccess}
                 autoHideDuration={9000}
                 ContentProps={{ className: classes.content }}
-                anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
+                anchorOrigin={{ horizontal: 'center', vertical: 'bottom' }}
               />
               <div className="row">
                 <div className="col-lg-12">
@@ -337,9 +344,9 @@ function Payments() {
                             className="form-control"
                             required
                             label="Upload Prove"
-                            value={userProve}
                             onChange={(e) => {
-                              setUserProve(e.target.value)
+                              const newFile = e.target.files[0]
+                              setUserProve(newFile)
                             }}
                           />
                         </div>

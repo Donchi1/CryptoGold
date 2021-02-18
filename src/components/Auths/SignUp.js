@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 //import { RegionDropdown, CountryDropdown } from 'react-country-region-selector'
 
-import { Link, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
 
 import { registerAction } from './Action'
@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Snackbar, makeStyles } from '@material-ui/core'
 
 import Footer from '../body/Footer'
+import NavBar from '../navigation/NavBar'
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -70,201 +71,25 @@ export default function SignUp() {
   return (
     <>
       {/*<!-- START HEADER -->*/}
-      <header className="header_wrap fixed-top">
-        <div className="container-fluid">
-          <Snackbar
-            onClose={() => setopenSnack(false)}
-            open={openSnack}
-            message={authError}
-            autoHideDuration={9000}
-            ContentProps={{ className: classes.content }}
-            anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
-          ></Snackbar>
-          <Snackbar
-            onClose={() => setNumberError(false)}
-            open={numberError}
-            message={numberErrorMessage}
-            autoHideDuration={9000}
-            ContentProps={{ className: classes.content }}
-            anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
-          ></Snackbar>
 
-          <nav className="navbar navbar-expand-lg">
-            <a
-              className="navbar-brand animation"
-              href="/"
-              data-animation="fadeInDown"
-              data-animation-delay="1s"
-            >
-              <span>
-                <span className="btn-default backtext">
-                  <img
-                    src="https://bestwebcreator.com/cryptocash/demo/assets/images/chart_icon.png"
-                    alt="chart"
-                  />
-                </span>
-                <span className="btn-default backtext"> ryptoGold</span>
-              </span>
-              <img
-                className="logo_dark"
-                src="https://bestwebcreator.com/cryptocash/demo/assets/images/logo_dark.png"
-                alt="logo"
-              />
-            </a>
-            <button
-              className="navbar-toggler animation"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              data-animation="fadeInDown"
-              data-animation-delay="1.1s"
-            >
-              <span className="fa fa-bars"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav m-auto">
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.8s"
-                >
-                  <a className="nav-link nav_item" href="/">
-                    Home
-                  </a>
-                </li>
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.2s"
-                >
-                  <a className="nav-link nav_item" href="/about">
-                    About
-                  </a>
-                </li>
-                <li
-                  className="dropdown animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.3s"
-                >
-                  <a
-                    className="dropdown-toggle nav-link active"
-                    href="/"
-                    data-toggle="dropdown"
-                  >
-                    Pages
-                  </a>
-                  <div className="dropdown-menu">
-                    <ul className="list_none">
-                      <li>
-                        <a
-                          className="dropdown-item nav-link nav_item"
-                          href="/service"
-                        >
-                          Services
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item nav-link nav_item"
-                          href="/teams"
-                        >
-                          Team
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item nav-link nav_item "
-                          href="/pricing"
-                        >
-                          Pricing
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.4s"
-                >
-                  <a className=" nav-link nav_item" href="/blogs">
-                    Blog
-                  </a>
-                </li>
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.5s"
-                >
-                  <a className="nav-link nav_item" href="/faq">
-                    Faq's
-                  </a>
-                </li>
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.8s"
-                >
-                  <a className="nav-link nav_item" href="/contacts">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <ul className="navbar-nav nav_btn align-items-center">
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="1.9s"
-                >
-                  <div className="lng_dropdown">
-                    <select name="countries" id="lng_select">
-                      <option
-                        value="en"
-                        data-image="https://bestwebcreator.com/cryptocash/demo/assets/images/eng.png"
-                        data-title="English"
-                      >
-                        EN
-                      </option>
-                      <option
-                        value="fn"
-                        data-image="https://bestwebcreator.com/cryptocash/demo/assets/images/fn.png"
-                        data-title="France"
-                      >
-                        FN
-                      </option>
-                      <option
-                        value="us"
-                        data-image="https://bestwebcreator.com/cryptocash/demo/assets/images/us.png"
-                        data-title="United States"
-                      >
-                        US
-                      </option>
-                    </select>
-                  </div>
-                </li>
-                <li
-                  className="animation"
-                  data-animation="fadeInDown"
-                  data-animation-delay="2s"
-                >
-                  <a
-                    className="btn btn-default btn-radius nav_item"
-                    href="/login"
-                  >
-                    Login
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <NavBar />
+      <Snackbar
+        onClose={() => setopenSnack(false)}
+        open={openSnack}
+        message={authError}
+        autoHideDuration={9000}
+        ContentProps={{ className: classes.content }}
+        anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
+      ></Snackbar>
+      <Snackbar
+        onClose={() => setNumberError(false)}
+        open={numberError}
+        message={numberErrorMessage}
+        autoHideDuration={9000}
+        ContentProps={{ className: classes.content }}
+        anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
+      ></Snackbar>
+
       {/* END HEADER */}
 
       {/* START SECTION BANNER */}
@@ -433,25 +258,7 @@ export default function SignUp() {
                         }
                       />
                     </div>
-                    <div
-                      className="form-group col-md-12 animation"
-                      data-animation="fadeInUp"
-                      data-animation-delay="0.9s"
-                    >
-                      <div className="checkbox_field d-inline">
-                        <input
-                          type="checkbox"
-                          name="rememberme"
-                          id="rememberme"
-                          value="rememberme"
-                          required
-                        />
-                        <label htmlFor="rememberme">
-                          I agree with{' '}
-                          <Link to="/signup">Terms of Services</Link>
-                        </label>
-                      </div>
-                    </div>
+
                     <div
                       className="form-group col-md-12 text-center animation"
                       data-animation="fadeInUp"

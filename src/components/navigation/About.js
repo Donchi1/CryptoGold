@@ -64,7 +64,7 @@ function About() {
                     data-animation="fadeInUp"
                     data-animation-delay="0.2s"
                   >
-                    About The Cryptocash
+                    About The CryptoGold
                   </h4>
                   <p
                     className="animation "
@@ -78,7 +78,7 @@ function About() {
                     participate in a permissionless and decentralized network.
                   </p>
                   <p
-                    className="animation text-light"
+                    className="animation "
                     data-animation="fadeInUp"
                     data-animation-delay="0.8s"
                   >

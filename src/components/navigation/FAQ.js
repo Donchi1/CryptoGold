@@ -194,7 +194,7 @@ function FAQ() {
                       <a
                         className="collapsed"
                         data-toggle="collapse"
-                        href="clone.html#collapseFour"
+                        href="#collapseFour"
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >

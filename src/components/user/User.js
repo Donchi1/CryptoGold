@@ -174,7 +174,9 @@ function User() {
             </Card.Footer>
           </Card>
         </div>
+        <div className="divider small_divider"></div>
         <MarketPrice />
+        <div className="divider small_divider"></div>
         <UserPlans />
 
         <div className="bottom_footer">

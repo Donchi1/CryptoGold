@@ -236,7 +236,7 @@ function UserPlans() {
       {/* START SECTION CALL TO ACTION- */}
       <section className="v_royal_blue">
         <div className="container">
-          <div className="text-center mt-2">
+          <div className="text-center mt-2 ">
             <img
               src={require('../../assets/moneyBag.png')}
               alt="moneybag"
@@ -245,9 +245,9 @@ function UserPlans() {
             />
           </div>
 
-          <div className="row align-items-center">
+          <div className="row align-items-center mt-5">
             <div className="col-lg-9">
-              <div className="action-content res_md_mb_20">
+              <div className="action-content res_md_mb_20 ">
                 <h3
                   className="animation"
                   data-animation="fadeInUp"

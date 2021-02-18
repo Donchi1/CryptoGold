@@ -109,15 +109,19 @@ export const forgetAction = (
     })
 }
 
-export const updateProfileAction = (profile, firebase, dispatch) => {
+export const updateProfileAction = (
+  profile,
+  firebase,
+  dispatch,
+  setuserData,
+) => {
   const uid = firebase.auth().currentUser.uid
   const userInitial = profile.firstname[0] + profile.lastname[0]
   if (
     profile.firstname ||
     profile.lastname ||
     profile.phone ||
-    profile.country ||
-    profile.state
+    profile.country
   ) {
     firebase
       .firestore()
@@ -128,14 +132,41 @@ export const updateProfileAction = (profile, firebase, dispatch) => {
         lastname: profile.lastname,
         country: profile.country,
         phone: profile.phone,
-        state: profile.state,
         initial: userInitial.toString(),
       })
-      .then(() => dispatch({ type: 'UPLOAD_SUCCESS' }))
-      .catch(() => dispatch({ type: 'UPLOAD_ERROR' }))
+      .then(() => {
+        dispatch({ type: 'UPLOAD_SUCCESS' })
+        setuserData({
+          ...profile,
+          firstname: '',
+          lastname: '',
+          state: '',
+          phone: '',
+          country: '',
+        })
+      })
+      .catch(() => {
+        dispatch({ type: 'UPLOAD_ERROR' })
+        setuserData({
+          ...profile,
+          firstname: '',
+          lastname: '',
+          state: '',
+          phone: '',
+          country: '',
+        })
+      })
   }
   if (profile.password) {
-    firebase.auth().currentUser.updatePassword(profile.password)
+    firebase
+      .auth()
+      .currentUser.updatePassword(profile.password)
+      .then(() =>
+        setuserData({
+          ...profile,
+          password: '',
+        }),
+      )
   }
   if (profile.fileUpload) {
     firebase
@@ -162,8 +193,8 @@ export const updateProfileAction = (profile, firebase, dispatch) => {
 export const withdrawalAction = (
   profile,
   withdrawalData,
-  dispatch,
   firebase,
+  dispatch,
   dataCheck,
   handleLoading,
   setWithdrawalData,
@@ -177,13 +208,15 @@ export const withdrawalAction = (
 
     .set({
       withdrawalAmount: withdrawalData.amount,
-      wallet: withdrawalData.wallet,
+      wallet: withdrawalData.wallet ? withdrawalData.wallet : '',
       date: new Date(),
       currentUserfirstname: profile.firstname,
       currentUserlastname: profile.lastname,
       withdrawerName: withdrawalData.name,
       number: withdrawalData.phone,
-      AccountNumber: withdrawalData.AccountNumber,
+      AccountNumber: withdrawalData.AccountNumber
+        ? withdrawalData.AccountNumber
+        : '',
       uid: uid,
     })
     .then(() => {
@@ -228,10 +261,9 @@ export const paymentAction = (
   firestore
     .collection('payments')
     .doc(uid)
-
     .set(
       {
-        paymentAmount: amount,
+        paymentAmount: amount ? amount : 1,
         date: new Date(),
         firstname: profile.firstname,
         lastname: profile.lastname,
@@ -263,7 +295,10 @@ export const paymentAction = (
             })
         })
     })
-    .catch(() => dispatch({ type: 'PAYMENT_SUCCESS' }))
+    .catch(() => {
+      handleLoading()
+      dispatch({ type: 'PAYMENT_SUCCESS' })
+    })
 }
 
 export const LogoutAction = (firebase, dispatch, handleLogoutRoute) => {

@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow: none;
+  max-width: 100% !important;
+  width: 100%;
+}
 
 .dropnav {
   border: 1px solid rgb(247, 24, 24) !important;
@@ -135,9 +140,6 @@ html {
   border-radius: 1.2rem !important;
   background-color: black !important;
 }
-.c {
-  color: #ff8f33;
-}
 
 @media only screen and (min-width: 1000px) {
   .mynav {
@@ -148,5 +150,12 @@ html {
 @media only screen and (max-width: 1000px) {
   .link {
     margin-top: 1.2rem !important;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .ul-color {
+    background-color: rgb(48, 48, 143);
   }
 }

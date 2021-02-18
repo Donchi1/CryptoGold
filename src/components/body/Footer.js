@@ -234,12 +234,12 @@ function Footer() {
             </div>
           </div>
         </div>
+        <div className="elfsight-app-84586d1b-bf6b-445a-ac23-291e2f64e74b"></div>
       </footer>
       {/* END FOOTER SECTION */}
-
-      <Link to="#" className="scrollup btn-default">
+      <a href="#" className="scrollup btn-default ">
         <i className="fa fa-long-arrow-up"></i>
-      </Link>
+      </a>
     </>
   )
 }

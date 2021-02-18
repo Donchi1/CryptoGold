@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <header className="header_wrap fixed-top">
+    <header className="header_wrap fixed-top ul-color">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg">
           <a
@@ -40,7 +40,7 @@ function NavBar() {
             <span className="fa fa-bars"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto list_none">
+            <ul className="navbar-nav m-auto ">
               <li
                 className="animation"
                 data-animation="fadeInDown"

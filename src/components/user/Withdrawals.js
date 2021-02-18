@@ -181,7 +181,7 @@ function Withdrawals() {
                           onClose={() => setOpenPay({ ...openPay, btc: false })}
                         >
                           <div className="field_form authorize_form">
-                            <div>
+                            <div className="text-center">
                               <p>
                                 You want to withdraw ${withdrawalAmount.amount}
                               </p>
@@ -190,8 +190,13 @@ function Withdrawals() {
                                 with {withdrawalAmount.withdrawalMethod}{' '}
                                 withdrawal method.
                               </p>
+                              <h5 className="text-center">
+                                {withdrawalAmount.withdrawalMethod} withdrawal.
+                              </h5>
                             </div>
-                            <h5>Input your withdrawal information</h5>
+                            <h5 className="text-center">
+                              Input your withdrawal information
+                            </h5>
                             <form onSubmit={handleWithdrawal}>
                               <div
                                 className="form-group col-md-12 animation"
@@ -285,6 +290,7 @@ function Withdrawals() {
                                   Submit
                                 </button>
                               </div>
+                              <div className="divider small_divider"></div>
                             </form>
                           </div>
                         </Dialog>
@@ -320,7 +326,7 @@ function Withdrawals() {
                           }
                         >
                           <div className="field_form authorize_form">
-                            <div>
+                            <div className="text-center">
                               <p>
                                 You want to withdraw ${withdrawalAmount.amount}
                               </p>
@@ -330,7 +336,7 @@ function Withdrawals() {
                                 withdrawal method.
                               </p>
                             </div>
-                            <h5>
+                            <h5 className="text-center">
                               {withdrawalAmount.withdrawalMethod} withdrawal.
                             </h5>
                             <h5>Input your withdrawal information</h5>
@@ -427,6 +433,7 @@ function Withdrawals() {
                                   Submit
                                 </button>
                               </div>
+                              <div className="divider small_divider"></div>
                             </form>
                           </div>
                         </Dialog>
@@ -462,7 +469,7 @@ function Withdrawals() {
                           }
                         >
                           <div className="field_form authorize_form">
-                            <div>
+                            <div className="text-center">
                               <p>
                                 You want to withdraw ${withdrawalAmount.amount}
                               </p>
@@ -472,7 +479,7 @@ function Withdrawals() {
                                 withdrawal method.
                               </p>
                             </div>
-                            <h5>
+                            <h5 className="text-center">
                               {withdrawalAmount.withdrawalMethod} withdrawal.
                             </h5>
                             <h5>Input your withdrawal information</h5>
@@ -569,6 +576,7 @@ function Withdrawals() {
                                   Submit
                                 </button>
                               </div>
+                              <div className="divider small_divider"></div>
                             </form>
                           </div>
                         </Dialog>
@@ -604,7 +612,7 @@ function Withdrawals() {
                           }
                         >
                           <div className="field_form authorize_form">
-                            <div>
+                            <div className="text-center">
                               <p>
                                 You want to withdraw ${withdrawalAmount.amount}
                               </p>
@@ -614,7 +622,7 @@ function Withdrawals() {
                                 withdrawal method.
                               </p>
                             </div>
-                            <h5>
+                            <h5 className="text-center">
                               {withdrawalAmount.withdrawalMethod} withdrawal.
                             </h5>
                             <h5>Input your withdrawal information</h5>
@@ -711,6 +719,7 @@ function Withdrawals() {
                                   Submit
                                 </button>
                               </div>
+                              <div className="divider small_divider"></div>
                             </form>
                           </div>
                         </Dialog>
