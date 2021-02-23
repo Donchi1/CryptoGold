@@ -221,7 +221,7 @@ function Footer() {
                   Rights Reserved.
                 </p>
               </div>
-              <div className="elfsight-app-84586d1b-bf6b-445a-ac23-291e2f64e74b"></div>
+
               <div className="col-md-6">
                 <ul className="list_none footer_menu">
                   <li>
