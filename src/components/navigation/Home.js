@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function Home() {
+  const [openVideo, setOpenVideo] = useState(false)
   const authState = useSelector((state) => state.firebase.auth)
   const [teamOpen, setTeamOpen] = useState('')
   const classes = useStyles()
@@ -31,7 +32,7 @@ function Home() {
   const contactError = useSelector(
     (state) => state.projectReducer.contactMessageError,
   )
-  const [openVideo, setOpenVideo] = useState(false)
+
   const [openSnack, setopenSnack] = useState(false)
 
   const dispatch = useDispatch()
@@ -1100,7 +1101,7 @@ function Home() {
                   data-animation="fadeInDown"
                   data-animation-delay="0.2s"
                 >
-                  Online & Trading ICO Token Sale
+                  Online trading and investments
                 </p>
               </div>
             </div>
@@ -3015,7 +3016,7 @@ function Home() {
                     <div className="contact_detail">
                       {' '}
                       <span>Email-id</span>
-                      <p>support@cryptoGold.info</p>
+                      <p>support@cryptosgold.info</p>
                     </div>
                   </li>
                 </ul>

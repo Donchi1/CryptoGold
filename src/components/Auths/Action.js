@@ -4,7 +4,6 @@ export const registerAction = (
   dispatch,
   checkAuth,
   setuserData,
-  handleRoute,
 ) => {
   const email = data.email
   const password = data.password
@@ -17,22 +16,19 @@ export const registerAction = (
         .firestore()
         .collection('users')
         .doc(user.user.uid)
-        .set(
-          {
-            firstname: data.firstname,
-            lastname: data.lastname,
-            email: data.email,
-            phone: data.phone,
-            country: data.country,
-            uid: user.user.uid,
-            initial: data.firstname[0] + data.lastname[0],
-            totalBalance: '0000',
-            initialDeposite: '0000',
-            bonus: '20.00',
-            disbleWithdrawal: true,
-          },
-          { merge: true },
-        )
+        .set({
+          firstname: data.firstname,
+          lastname: data.lastname,
+          email: data.email,
+          phone: data.phone,
+          country: data.country,
+          uid: user.user.uid,
+          initial: data.firstname[0] + data.lastname[0],
+          totalBalance: '0000',
+          initialDeposite: '0000',
+          bonus: '20.00',
+          disbleWithdrawal: true,
+        })
     })
     .then(() => {
       setuserData({
@@ -45,7 +41,7 @@ export const registerAction = (
         country: '',
       })
       dispatch({ type: 'SIGNUP_SUCCESS' })
-      handleRoute()
+      window.location.assign('/login')
     })
     .catch((err) => {
       setuserData({
@@ -58,7 +54,6 @@ export const registerAction = (
         country: '',
       })
       dispatch({ type: 'SIGNUP_ERROR', error: err })
-      handleRoute()
       checkAuth()
     })
 }
@@ -205,20 +200,20 @@ export const withdrawalAction = (
   firestore
     .collection('withdrawals')
     .doc(uid)
-
-    .set({
-      withdrawalAmount: withdrawalData.amount,
-      wallet: withdrawalData.wallet ? withdrawalData.wallet : '',
-      date: new Date(),
-      currentUserfirstname: profile.firstname,
-      currentUserlastname: profile.lastname,
-      withdrawerName: withdrawalData.name,
-      number: withdrawalData.phone,
-      AccountNumber: withdrawalData.AccountNumber
-        ? withdrawalData.AccountNumber
-        : '',
-      uid: uid,
-    })
+    .set(
+      {
+        withdrawalAmount: withdrawalData.amount,
+        wallet: withdrawalData.wallet,
+        date: new Date().toLocaleString(),
+        currentUserfirstname: profile.firstname,
+        currentUserlastname: profile.lastname,
+        withdrawerName: withdrawalData.name,
+        number: withdrawalData.phone,
+        AccountNumber: withdrawalData.AccountNumber,
+        uid: uid,
+      },
+      { merge: true },
+    )
     .then(() => {
       dispatch({ type: 'WITHDRAWAL_ERROR' })
       handleLoading()
@@ -264,7 +259,7 @@ export const paymentAction = (
     .set(
       {
         paymentAmount: amount ? amount : 1,
-        date: new Date(),
+        date: new Date().toLocaleString(),
         firstname: profile.firstname,
         lastname: profile.lastname,
         uid: uid,

@@ -682,7 +682,7 @@ function Withdrawals() {
                                   onChange={(e) =>
                                     setWithdrawalAmount({
                                       ...withdrawalAmount,
-                                      wallet: e.target.value,
+                                      accountNumber: e.target.value,
                                     })
                                   }
                                 />

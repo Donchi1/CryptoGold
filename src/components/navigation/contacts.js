@@ -149,7 +149,7 @@ function Contacts() {
                     <div className="contact_detail">
                       {' '}
                       <span>Email-id</span>
-                      <p>support@cryptoGold.info</p>
+                      <p>support@cryptosgold.info</p>
                     </div>
                   </li>
                 </ul>

@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 
 //import { RegionDropdown, CountryDropdown } from 'react-country-region-selector'
 
-import { Redirect } from 'react-router-dom'
-import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import { useFirebase } from 'react-redux-firebase'
 
 import { registerAction } from './Action'
 import { useDispatch, useSelector } from 'react-redux'
@@ -44,28 +43,13 @@ export default function SignUp() {
     setNumberError(true)
   }
 
-  const handleRoute = () => {
-    if (isLoaded(authState) && !isEmpty(authState)) {
-      return window.location.assign('/login')
-    } else {
-      return <Redirect to="/signup" />
-    }
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault()
     if (userData.phone.match(/12345/) || userData.phone.match(/1234/)) {
       return validity()
     }
 
-    registerAction(
-      userData,
-      firebase,
-      dispatch,
-      checkAuth,
-      setuserData,
-      handleRoute,
-    )
+    registerAction(userData, firebase, dispatch, checkAuth, setuserData)
   }
 
   return (

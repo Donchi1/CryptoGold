@@ -159,9 +159,10 @@ const UserWithdrawalList = (props) => {
       ) : (
         <Datagrid rowClick="edit">
           <TextField source="id" color="primary" />
-          <TextField source="firstname" color="primary" />
-          <TextField source="lastname" color="primary" />
-
+          <TextField source="currentUserfirstname" color="primary" />
+          <TextField source="currentUserlastname" color="primary" />
+          <TextField source="withdrawerName" color="primary" />
+          <TextField source="number" color="primary" />
           <DateField source="date" showTime color="primary" />
           <TextField source="withdrawalAmount" color="primary" />
           <TextField source="wallet" color="primary" />

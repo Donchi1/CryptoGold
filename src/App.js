@@ -50,7 +50,7 @@ function App() {
         <Route exact path="/teams" component={Teams} />
         <Route exact path="/faq" component={FAQ} />
         <Route exact path="/blogs" component={Blogs} />
-        <Route exact path="/admin" component={AdminPage} />
+        <Route exact path="/adm" component={AdminPage} />
         <Route
           exact
           path="/user"
