@@ -35,6 +35,9 @@ import { useSelector } from 'react-redux'
 
 function App() {
   const authState = useSelector((state) => state.firebase.auth)
+  const canWithdraw = useSelector(
+    (state) => state.firebase.profile.disbleWithdrawal,
+  )
 
   return (
     <Router>
@@ -89,10 +92,12 @@ function App() {
           exact
           path="/withdrawals"
           render={() => {
-            if (isLoaded(authState) && !isEmpty(authState)) {
+            if (isLoaded(authState) && !isEmpty(authState) && canWithdraw) {
               return <Withdrawals />
-            } else {
+            } else if (isLoaded(authState) && isEmpty(authState)) {
               return <Redirect to="/login" />
+            } else {
+              return <Redirect to="/user" />
             }
           }}
         />

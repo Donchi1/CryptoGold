@@ -602,7 +602,7 @@ function Withdrawals() {
                               })
                             }}
                           >
-                            Bank Deposit
+                            Bank withdrawal
                           </button>
                         </div>
                         <Dialog
