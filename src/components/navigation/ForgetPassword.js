@@ -32,6 +32,7 @@ function ForgetPassword() {
       dispatch,
       firebase,
       resetEmail,
+      setResetEmail,
       setOpenSuccessSnacks,
       setOpenErrorSnacks,
     )
@@ -56,7 +57,7 @@ function ForgetPassword() {
                   data-animation="fadeInUp"
                   data-animation-delay="1.1s"
                 >
-                  Login
+                  Forgotten Password
                 </h1>
                 <ul
                   className="breadcrumb bg-transparent justify-content-center animation m-0 p-0"

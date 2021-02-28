@@ -88,6 +88,7 @@ export const forgetAction = (
   dispatch,
   firebase,
   creds,
+  setCreds,
   setSuccessSnacks,
   setErrorSnacks,
 ) => {
@@ -97,10 +98,12 @@ export const forgetAction = (
     .then(() => {
       dispatch({ type: 'PASSRESET_SUCCESS' })
       setSuccessSnacks(true)
+      setCreds('')
     })
-    .catch(() => {
-      dispatch({ type: 'PASSRESET_ERROR' })
+    .catch((error) => {
+      dispatch({ type: 'PASSRESET_ERROR', error })
       setErrorSnacks(true)
+      setCreds('')
     })
 }
 

@@ -43,7 +43,7 @@ export const authReducer = (state = initialAuth, action) => {
     case 'PASSRESET_ERROR':
       return {
         ...state,
-        passResetError: 'Wrong email inputed',
+        passResetError: action.error.message,
       }
 
     default:
