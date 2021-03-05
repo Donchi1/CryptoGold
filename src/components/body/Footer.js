@@ -5,6 +5,7 @@ import { useFirebase } from 'react-redux-firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import Chat from '../navigation/Chat'
 
 function Footer() {
   const [input, setinput] = useState('')
@@ -235,6 +236,7 @@ function Footer() {
             </div>
           </div>
         </div>
+        <Chat />
       </footer>
       {/* END FOOTER SECTION */}
       <a href="#" className="scrollup btn-default ">

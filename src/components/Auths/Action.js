@@ -27,7 +27,7 @@ export const registerAction = (
           totalBalance: '0000',
           initialDeposite: '0000',
           bonus: '20.00',
-          disbleWithdrawal: false,
+          disbleWithdrawal: true,
         })
     })
     .then(() => {

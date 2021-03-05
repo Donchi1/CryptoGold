@@ -21,6 +21,9 @@ function Withdrawals() {
   const transError = useSelector(
     (state) => state.projectReducer.withdrawalError,
   )
+  const disableWithdraw = useSelector(
+    (state) => state.firebase.profile.disbleWithdrawal,
+  )
   const profileInfo = useSelector((state) => state.firebase.profile)
   const [openLoader, setOpenLoader] = useState(false)
   const [openPay, setOpenPay] = useState({
@@ -158,6 +161,7 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
+                            disabled={disableWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -302,6 +306,7 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default  btn-radius w-100"
+                            disabled={disableWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -445,6 +450,7 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
+                            disabled={disableWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -588,6 +594,7 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
+                            disabled={disableWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
