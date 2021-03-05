@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <header className="header_wrap fixed-top ul-color">
+    <header className="header_wrap fixed-top ul-color h-z-index">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg">
           <a
