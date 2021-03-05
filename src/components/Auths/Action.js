@@ -12,7 +12,7 @@ export const registerAction = (
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((user) => {
-      firebase
+      return firebase
         .firestore()
         .collection('users')
         .doc(user.user.uid)
