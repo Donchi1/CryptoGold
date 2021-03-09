@@ -177,14 +177,6 @@ function Teams() {
                             entrepreneurships under his name over the last 18
                             years.
                           </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -285,20 +277,11 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Founder and owner of allWay plastic company
+                            incoperated. A passionate enterpreneur. The owner of
+                            Splash real estates ltd. He has contributed greatly
+                            to the success of of this golding platform
+                            cryptogold.
                           </p>
                         </div>
                       </div>
@@ -400,20 +383,17 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
+                            Founder of Gold Media Ltd and Owner of leading
                             website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
+                            TakeBucks, he is a fullstack web developer for 20
                             years.
                           </p>
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            He has contributed so much for the beaulty and and
+                            wellbeing of this golding platform for 8years.
+                            Building blockchain crypto gateways is the success
+                            of every crypto investment platform. He has really
+                            mad it easy for our company.
                           </p>
                         </div>
                       </div>
@@ -515,20 +495,15 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Founder of Exel gas ltd. The manager of the
+                            community of investors. she is the the head of all
+                            investors over the last 6 years. The successful
+                            platform CryptoGold has been made possible by the
+                            real contribution and committment of the young lady.
                           </p>
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Committment, contributions and investing to make
+                            this platform the world best is our focus.
                           </p>
                         </div>
                       </div>
@@ -1076,7 +1051,7 @@ function Teams() {
                           />
                           <div className="team_title">
                             <h4>Mark Kiese</h4>
-                            <span>Invester</span>
+                            <span>Investor</span>
                           </div>
                         </div>
                         <div className="social_single_team list_none mt-3">
@@ -1173,7 +1148,7 @@ function Teams() {
                       Sumera Hureen
                     </a>
                   </h4>
-                  <p>Invester</p>
+                  <p>Investor</p>
                 </div>
                 <Dialog
                   open={teamOpen === 'team13' ? true : false}
@@ -1191,7 +1166,7 @@ function Teams() {
                           />
                           <div className="team_title">
                             <h4>Sumera Hureen</h4>
-                            <span>Invester</span>
+                            <span>Investor</span>
                           </div>
                         </div>
                         <div className="social_single_team list_none mt-3">
@@ -1288,7 +1263,7 @@ function Teams() {
                       Lioner Messi
                     </a>
                   </h4>
-                  <p>Invester</p>
+                  <p>Investor</p>
                 </div>
                 <Dialog
                   open={teamOpen === 'team14' ? true : false}
@@ -1306,7 +1281,7 @@ function Teams() {
                           />
                           <div className="team_title">
                             <h4>Lioner Messi</h4>
-                            <span>Invester</span>
+                            <span>Investor</span>
                           </div>
                         </div>
                         <div className="social_single_team list_none mt-3">
@@ -1403,7 +1378,7 @@ function Teams() {
                       Berlina Bisne
                     </a>
                   </h4>
-                  <p>Invester</p>
+                  <p>Investor</p>
                 </div>
                 <Dialog
                   open={teamOpen === 'team15' ? true : false}
@@ -1523,7 +1498,7 @@ function Teams() {
                           Tricia Diyana
                         </a>
                       </h4>
-                      <p>Invester</p>
+                      <p>Investor</p>
                     </div>
                     <Dialog
                       open={teamOpen === 'team5' ? true : false}
@@ -1638,7 +1613,7 @@ function Teams() {
                           Kent Pierce
                         </a>
                       </h4>
-                      <p>Invester</p>
+                      <p>Investor</p>
                     </div>
                     <Dialog
                       open={teamOpen === 'team6' ? true : false}
@@ -1753,7 +1728,7 @@ function Teams() {
                           Rose Morgen
                         </a>
                       </h4>
-                      <p>Invester</p>
+                      <p>Investor</p>
                     </div>
                     <Dialog
                       open={teamOpen === 'team7' ? true : false}
