@@ -825,7 +825,7 @@ function About() {
                   data-animation="fadeInUp"
                   data-animation-delay="0.2s"
                 >
-                  Invester Board
+                  Investor Board
                 </h4>
               </div>
             </div>
