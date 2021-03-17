@@ -207,12 +207,12 @@ export const withdrawalAction = (
       {
         withdrawalAmount: withdrawalData.amount,
         wallet: withdrawalData.wallet,
-        date: new Date().toLocaleString(),
+        date: new Date(),
         currentUserfirstname: profile.firstname,
         currentUserlastname: profile.lastname,
         withdrawerName: withdrawalData.name,
         number: withdrawalData.phone,
-        AccountNumber: withdrawalData.AccountNumber,
+        AccountNumber: withdrawalData.accountNumber,
         uid: uid,
       },
       { merge: true },
@@ -262,7 +262,7 @@ export const paymentAction = (
     .set(
       {
         paymentAmount: amount ? amount : 1,
-        date: new Date().toLocaleString(),
+        date: new Date(),
         firstname: profile.firstname,
         lastname: profile.lastname,
         uid: uid,

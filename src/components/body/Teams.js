@@ -33,7 +33,7 @@ function Teams() {
                   Team
                 </h1>
                 <ul
-                  className="breadcrumb bg-transparent justify-content-center animation m-0 p-0"
+                  className="breadcrumb bg-transparent justify-content-center animated m-0 p-0"
                   data-animation="fadeInUp"
                   data-animation-delay="1.3s"
                 >

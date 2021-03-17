@@ -31,7 +31,6 @@ export default function SignUp() {
   const firebase = useFirebase()
 
   const dispatch = useDispatch()
-  const authState = useSelector((state) => state.firebase.auth)
   const authError = useSelector((state) => state.authReducer.signupError)
   const [numberError, setNumberError] = useState(false)
   const [numberErrorMessage, setNumberErrorMessage] = useState('')

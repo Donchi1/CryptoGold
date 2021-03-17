@@ -33,8 +33,8 @@ function Withdrawals() {
     bank: false,
   })
 
-  const checkData = () => setopenError(true)
   const [openError, setopenError] = useState(false)
+  const checkData = () => setopenError(true)
 
   const [newAmount, setNewAmount] = useState(1)
   const [withdrawalAmount, setWithdrawalAmount] = useState({
@@ -42,7 +42,7 @@ function Withdrawals() {
     wallet: '',
     withdrawalMethod: '',
     name: '',
-    accountNumber: '',
+    accountNumber: 'none',
     phone: '',
   })
 
@@ -130,7 +130,7 @@ function Withdrawals() {
                 message={transError}
                 autoHideDuration={9000}
                 ContentProps={{ className: classes.content }}
-                anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
+                anchorOrigin={{ horizontal: 'center', vertical: 'bottom' }}
               />
               <div className="row">
                 <div className="col-lg-12">

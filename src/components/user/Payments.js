@@ -150,7 +150,7 @@ function Payments() {
                 message={transSuccess}
                 autoHideDuration={9000}
                 ContentProps={{ className: classes.content }}
-                anchorOrigin={{ horizontal: 'center', vertical: 'top' }}
+                anchorOrigin={{ horizontal: 'center', vertical: 'bottom' }}
               />
               <div className="row">
                 <div className="col-lg-12">
