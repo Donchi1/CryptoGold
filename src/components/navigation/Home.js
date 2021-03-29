@@ -1444,15 +1444,17 @@ function Home() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            {' '}
-                            Martin an enthuaistic,passionate and hard working
-                            yong man with a 10years experience in in financial
-                            company.
+                            Founder of Gold Media Ltd and Owner of leading
+                            website for affiliates in the entertainment industry
+                            TakeBucks, he is a fullstack web developer for 20
+                            years.
                           </p>
                           <p>
-                            He has used his skilled to create stable crypto
-                            routes and stable means crypto trading in cryptogold
-                            platform.
+                            He has contributed so much for the beaulty and and
+                            wellbeing of this golding platform for 8years.
+                            Building blockchain crypto gateways is the success
+                            of every crypto investment platform. He has really
+                            mad it easy for our company.
                           </p>
                         </div>
                       </div>
@@ -1631,7 +1633,7 @@ function Home() {
                           Tricia Diyana
                         </a>
                       </h4>
-                      <p>Invester</p>
+                      <p>Investor</p>
                     </div>
                     <Dialog
                       open={teamOpen === 'team5' ? true : false}

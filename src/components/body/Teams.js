@@ -170,12 +170,14 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Derek is an expert in marketting. A real evangelist
+                            making sure the maketting part of our company is
+                            stable. He has really contributed so greatly to the
+                            success of the this great company.
+                          </p>
+                          <p>
+                            He makes sure the need of the client is been
+                            reached.
                           </p>
                         </div>
                       </div>
@@ -277,11 +279,10 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder and owner of allWay plastic company
-                            incoperated. A passionate enterpreneur. The owner of
-                            Splash real estates ltd. He has contributed greatly
-                            to the success of of this golding platform
-                            cryptogold.
+                            Jessica a passionate, committed and hardworking man.
+                            A real genus in cryto, working to make cryptogold a
+                            top company in the crypto market. Reaching out to
+                            our client at when due
                           </p>
                         </div>
                       </div>
@@ -495,15 +496,15 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Exel gas ltd. The manager of the
-                            community of investors. she is the the head of all
-                            investors over the last 6 years. The successful
-                            platform CryptoGold has been made possible by the
-                            real contribution and committment of the young lady.
+                            Maria a passionate and a expert in crypto. About 10
+                            years experience in the financial sector.Working
+                            together as a team towards acheiving the goal of our
+                            company is our main focus.
                           </p>
                           <p>
-                            Committment, contributions and investing to make
-                            this platform the world best is our focus.
+                            As a community manager, Maria makes sure all the
+                            teams members are updated and featured for the best
+                            interest of our company.
                           </p>
                         </div>
                       </div>
@@ -608,20 +609,10 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            An expert in crypto and Bitcoin App Development. He
+                            has been developing bitcoin and blockchain apps over
+                            10year. A fast and reliable team member always ready
+                            to reach out to our clients.
                           </p>
                         </div>
                       </div>
@@ -672,7 +663,7 @@ function Teams() {
                       Alexa Stewart
                     </a>
                   </h4>
-                  <p>Community Management</p>
+                  <p>Machine Learning Engineer</p>
                 </div>
                 <Dialog
                   open={teamOpen === 'team9' ? true : false}
@@ -723,20 +714,14 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Experienced algorithmic crypto trader and a
+                            daveloper.
                           </p>
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            An Experienced and skilled developer with 10 years
+                            experience in python and c++ programming languages,
+                            using his developing skills to make out the best for
+                            our team.
                           </p>
                         </div>
                       </div>
@@ -838,20 +823,11 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            A real expert in sales with a master degree in
+                            bussiness and othe related courses. He makes sure
+                            the our company is made know to as many people as
+                            posible round the whole world. Always there to make
+                            sure our clients receive standard service.
                           </p>
                         </div>
                       </div>
@@ -920,7 +896,7 @@ function Teams() {
                           />
                           <div className="team_title">
                             <h4>Kasandra Ford</h4>
-                            <span>App Manager</span>
+                            <span>Graphic Designer</span>
                           </div>
                         </div>
                         <div className="social_single_team list_none mt-3">
@@ -952,21 +928,13 @@ function Teams() {
                         <div className="pt-3">
                           <h5>About</h5>
                           <hr />
+                          <p>Experienced graphic designer.</p>
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            A stable, experienced graphic designer for the last
+                            12 years.She creates the graphics for published,
+                            printed or electronic media for advertising. She
+                            makes sure accessible and memorable information is
+                            made available to our clients.
                           </p>
                         </div>
                       </div>
@@ -1033,7 +1001,7 @@ function Teams() {
                       Mark Kiese
                     </a>
                   </h4>
-                  <p>Invester</p>
+                  <p>Investor</p>
                 </div>
                 <Dialog
                   open={teamOpen === 'team12' ? true : false}
@@ -1084,20 +1052,10 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Founder and CEO of Elice plastics. A real
+                            enterpreneur, hardworking, smart and gentle. He is
+                            an investor, contributor and advicer to our company
+                            cryptogold.
                           </p>
                         </div>
                       </div>
@@ -1199,20 +1157,9 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            An investor, contributor and advicer to our company.
+                            He has contributed alot to make cryptogold a stable
+                            and reliable platform for crypto investments.
                           </p>
                         </div>
                       </div>
@@ -1396,7 +1343,7 @@ function Teams() {
                           />
                           <div className="team_title">
                             <h4>Berlina Bisne</h4>
-                            <span>Invester</span>
+                            <span>Investor</span>
                           </div>
                         </div>
                         <div className="social_single_team list_none mt-3">
@@ -1429,20 +1376,12 @@ function Teams() {
                           <h5>About</h5>
                           <hr />
                           <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
-                          </p>
-                          <p>
-                            Founder of Venus Media Ltd and Owner of leading
-                            website for affiliates in the entertainment industry
-                            TakeBucks, he is a videographer, photographer and
-                            producer with a big number of successful
-                            entrepreneurships under his name over the last 18
-                            years.
+                            Founder and CEO of Exco Real estates, the leading
+                            real estate company in the United States. She is a
+                            contributor, advicer and an investor in our company.
+                            She has contributed alot over 10years, helping to
+                            make cryptogold one top giant in cryptocurrency
+                            investment.
                           </p>
                         </div>
                       </div>
@@ -1516,7 +1455,7 @@ function Teams() {
                               />
                               <div className="team_title">
                                 <h4>Tricia Diyana</h4>
-                                <span>Invester</span>
+                                <span>Investor</span>
                               </div>
                             </div>
                             <div className="social_single_team list_none mt-3">
@@ -1548,14 +1487,6 @@ function Teams() {
                             <div className="pt-3">
                               <h5>About</h5>
                               <hr />
-                              <p>
-                                Founder of Venus Media Ltd and Owner of leading
-                                website for affiliates in the entertainment
-                                industry TakeBucks, he is a videographer,
-                                photographer and producer with a big number of
-                                successful entrepreneurships under his name over
-                                the last 18 years.
-                              </p>
                               <p>
                                 Founder of Venus Media Ltd and Owner of leading
                                 website for affiliates in the entertainment
@@ -1631,7 +1562,7 @@ function Teams() {
                               />
                               <div className="team_title">
                                 <h4>Kent Pierce</h4>
-                                <span>Invester</span>
+                                <span>Investor</span>
                               </div>
                             </div>
                             <div className="social_single_team list_none mt-3">
@@ -1664,20 +1595,10 @@ function Teams() {
                               <h5>About</h5>
                               <hr />
                               <p>
-                                Founder of Venus Media Ltd and Owner of leading
-                                website for affiliates in the entertainment
-                                industry TakeBucks, he is a videographer,
-                                photographer and producer with a big number of
-                                successful entrepreneurships under his name over
-                                the last 18 years.
-                              </p>
-                              <p>
-                                Founder of Venus Media Ltd and Owner of leading
-                                website for affiliates in the entertainment
-                                industry TakeBucks, he is a videographer,
-                                photographer and producer with a big number of
-                                successful entrepreneurships under his name over
-                                the last 18 years.
+                                Founder of Oven Gas Ltd and he is a distrutor,
+                                producer with a big number of successful
+                                entrepreneurships under his name over the last
+                                15 years.
                               </p>
                             </div>
                           </div>
@@ -1746,7 +1667,7 @@ function Teams() {
                               />
                               <div className="team_title">
                                 <h4>Rose Morgen</h4>
-                                <span>Invester</span>
+                                <span>Investor</span>
                               </div>
                             </div>
                             <div className="social_single_team list_none mt-3">
@@ -1779,20 +1700,9 @@ function Teams() {
                               <h5>About</h5>
                               <hr />
                               <p>
-                                Founder of Venus Media Ltd and Owner of leading
-                                website for affiliates in the entertainment
-                                industry TakeBucks, he is a videographer,
-                                photographer and producer with a big number of
-                                successful entrepreneurships under his name over
-                                the last 18 years.
-                              </p>
-                              <p>
-                                Founder of Venus Media Ltd and Owner of leading
-                                website for affiliates in the entertainment
-                                industry TakeBucks, he is a videographer,
-                                photographer and producer with a big number of
-                                successful entrepreneurships under his name over
-                                the last 18 years.
+                                Founder of Goldclass platics, a leading platic
+                                company.She is an advisor and an investor in our
+                                company. for the last 7 years.
                               </p>
                             </div>
                           </div>
