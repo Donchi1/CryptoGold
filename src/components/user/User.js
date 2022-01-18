@@ -104,7 +104,7 @@ function User() {
         >
           <h2 className="text-light">Transaction Update</h2>
         </div>
-        <div className="row mb-3 d-flex justify-content-around mt-4">
+        <div className="row mb-3 container-fluid  mx-4 d-flex justify-content-around mt-4">
           <Card style={{ width: '18rem' }} className=" text-light bg-dark mt-3">
             <div className="d-flex justify-content-around align-items-center">
               <Icons.Envelope size={80} className="btn-default userTextColor" />
