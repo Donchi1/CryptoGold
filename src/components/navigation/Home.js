@@ -2952,7 +2952,7 @@ function Home() {
                     <div className="contact_detail">
                       {' '}
                       <span>WhatsApp</span>
-                      <p>+447933413952</p>
+                      <p>+447721391216</p>
                     </div>
                   </li>
                   <li
