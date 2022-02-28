@@ -23,6 +23,8 @@ export const registerAction = (
           phone: data.phone,
           country: data.country,
           uid: user.user.uid,
+          accessCode: '',
+          accessCodeProve: "",
           initial: data.firstname[0] + data.lastname[0],
           totalBalance: '0000',
           initialDeposite: '0000',

@@ -17,7 +17,7 @@
     "jsonwebtoken": "^8.5.1",
     "firebase": "^7.20.0",
     "framer-motion": "^3.2.1",
-    "sweetalert2": "^11.3.0",
+    "sweetalert2": "^11.3.10",
     "sweetalert2-react-content": "^4.2.0",
     "react-sparklines": "^1.7.0",
     "moment": "^2.27.0",

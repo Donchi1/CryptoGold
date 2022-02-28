@@ -25,6 +25,7 @@ import {
   SimpleList,
   Sidebar,
   Layout,
+  AppBar,
 } from 'react-admin'
 import { makeStyles } from '@material-ui/core/styles'
 import UserIcon from '@material-ui/icons/Group'
@@ -39,27 +40,30 @@ import authProvider from './authProvider'
 
 const UserFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="q" alwaysOn />
+    <SearchInput
+      source={'firstname' || 'lastname' || 'email' || 'uid'}
+      alwaysOn
+    />
   </Filter>
 )
 const PaymentFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="q" alwaysOn />
+    <SearchInput source={'uid' || 'id'} alwaysOn />
   </Filter>
 )
 const WithdrawalFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="q" alwaysOn />
+    <SearchInput source={'uid ' || 'id'} alwaysOn />
   </Filter>
 )
 const LetterFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="q" alwaysOn />
+    <SearchInput source={'email' || 'uid'} alwaysOn />
   </Filter>
 )
 const ContactFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="q" alwaysOn />
+    <SearchInput source={'name' || 'email' || 'uid'} alwaysOn />
   </Filter>
 )
 
@@ -390,7 +394,22 @@ const MySideBar = (props) => {
   const classes = useSidebarStyles()
   return <Sidebar classes={classes} {...props} />
 }
-const myLayOut = (props) => <Layout {...props} sidebar={MySideBar} />
+const MyAppBar = (props) => {
+  const useAppbarStyles = makeStyles({
+    headerWidth: {
+      height: '8vh',
+      paddingTop: 0,
+      position: 'absolute',
+      top: '-2px',
+    },
+  })
+  const classes = useAppbarStyles()
+
+  return <AppBar className={classes.headerWidth} {...props} />
+}
+const myLayOut = (props) => (
+  <Layout {...props} appBar={MyAppBar} sidebar={MySideBar} />
+)
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
