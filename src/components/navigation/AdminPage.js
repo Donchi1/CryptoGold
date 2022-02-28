@@ -24,6 +24,7 @@ import {
   SearchInput,
   SimpleList,
   Sidebar,
+  ImageInput,
   Layout,
   AppBar,
 } from 'react-admin'
