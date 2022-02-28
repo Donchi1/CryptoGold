@@ -257,11 +257,7 @@ function UserNav() {
             </Button>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              disabled={accessCodeInfo.isSubmitting}
-              type="submit"
-              className="btn"
-            >
+            <Button type="submit" className="btn">
               Submit
             </Button>
             <Button
