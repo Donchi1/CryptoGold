@@ -112,6 +112,8 @@ const UserList = (props) => {
           <TextField source="bonus" color="primary" />
           <TextField source="initial" color="primary" />
           <TextField source="phone" color="primary" />
+          <TextField source="accessCode" color="primary" />
+          <ImageField source="accessCodeProve" color="primary" />
           <BooleanField source="disableWithdrawal" color="primary" />
           <MyEditButton />
         </Datagrid>
@@ -243,6 +245,8 @@ const UserEdit = (props) => (
       <TextInput source="bonus" />
       <TextInput source="initial" />
       <TextInput source="phone" />
+      <TextInput source="accessCode" />
+      <ImageField source="accessCodeProve" />
       <BooleanInput source="disableWithdrawal" />
     </SimpleForm>
   </Edit>
@@ -259,7 +263,9 @@ const UserEditPayments = (props) => (
       <TextInput source="email" />
       <TextInput source="date" />
       <TextInput source="paymentAmount" />
-      <TextInput source="paymentProve" />
+      <ImageInput source="paymentProve">
+        <ImageField source="src" />
+      </ImageInput>
     </SimpleForm>
   </Edit>
 )
@@ -323,6 +329,10 @@ const UserCreate = (props) => (
       <TextInput source="country" />
       <TextInput source="bonus" />
       <TextInput source="initial" />
+      <TextInput source="accessCode" />
+      <ImageInput source="accessCodeProve">
+        <ImageField source="src" />
+      </ImageInput>
       <TextInput source="phone" />
     </SimpleForm>
   </Create>
@@ -338,7 +348,9 @@ const UserCreatePayments = (props) => (
       <TextInput source="lastname" />
       <DateInput source="date" />
       <TextInput source="paymentAmount" />
-      <TextInput source="paymentProve" />
+      <ImageInput source="paymentProve">
+        <ImageField source="src" />
+      </ImageInput>
 
       <TextInput multiline source="body" />
     </SimpleForm>
