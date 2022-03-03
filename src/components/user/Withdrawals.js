@@ -162,7 +162,6 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
-                            disabled={disableWithdraw || noWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -307,7 +306,6 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default  btn-radius w-100"
-                            disabled={disableWithdraw || noWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -451,7 +449,6 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
-                            disabled={disableWithdraw || noWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
@@ -595,7 +592,6 @@ function Withdrawals() {
                         >
                           <button
                             className="btn-default btn-radius w-100"
-                            disabled={disableWithdraw || noWithdraw}
                             onClick={() => {
                               setOpenPay({
                                 ...openPay,
