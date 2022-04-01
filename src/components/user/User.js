@@ -24,12 +24,9 @@ function User() {
       <UserNav />
 
       <section id="home_section" className="section_banner gradient_box2 pb-0">
-        <div className="text-center  text-uppercase ">
-          <h1 className="text-light">Dashboard</h1>
-        </div>
         <div className="divider small_divider"></div>
         <div className="row text-center mb-3 d-flex justify-content-around mx-2">
-          <div className=" text-light mt-3 " style={{ width: '17rem' }}>
+          <div className=" text-light  " style={{ width: '17rem' }}>
             <CircularProgressbarWithChildren
               strokeWidth={3}
               value={percentage}
