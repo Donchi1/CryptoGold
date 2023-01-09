@@ -137,7 +137,7 @@ function Contacts() {
                     <div className="contact_detail">
                       {' '}
                       <span>WhatsApp</span>
-                      <p>+380680502469</p>
+                      <p>+447887684182</p>
                     </div>
                   </li>
                   <li
