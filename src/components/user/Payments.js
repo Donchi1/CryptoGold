@@ -240,7 +240,7 @@ function Payments() {
                                     width="300px"
                                     alt="Code"
                                   />
-                                  <p>37XFpQ2v6GVf1UuMnvCvEcWbD2oEmE3Wbf</p>
+                                  <p>bc1qktvqxaymmglh2nwlcl9yjwzuc36qaz6rv5t7u0</p>
                                 </div>
                               </>
                             )}
